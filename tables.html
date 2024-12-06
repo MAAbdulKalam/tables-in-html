@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in html</title>
+    <style>
+        a{
+            text-decoration: none;
+            margin-left: 80px;
+            color: cornsilk;
+        }
+        a:hover{
+            color: rgb(12, 208, 41);
+        }
+        nav{
+            padding-top: 35px;         
+        }
+        header{
+            background-color: rgb(136, 61, 7);
+            border-radius: 5px;
+            color: rgb(222, 241, 10);
+            text-shadow: 0px 7px 5px black;
+            font-variant: small-caps;
+            display: grid;
+            grid-template-columns: 30% 70%;   
+        }
+        h1{
+            text-align: center;
+            color: crimson;
+            background-color: cornsilk;
+            border-radius: 20px;
+            border: 2px solid grey;
+        }
+        h3{
+            color: rgb(38, 39, 29);
+            background-color: bisque;
+            width: 300px;
+            border-radius: 30px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        table, tr, th, td{
+            border: 1px solid blue;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #student tr:nth-child(even){
+            background-color: rgb(184, 169, 147);
+        }
+        #student th{
+            background-color: rgb(236, 218, 81);
+            color: rgb(8, 0, 255);
+        }
+
+        #employees tr:nth-child(even){
+            background-color: rgb(153, 202, 104);
+        }
+        #employees th{
+            background-color: rgb(103, 242, 122);
+            color: rgb(50, 24, 217);
+        }
+        td:hover{
+            background-color: rgb(246, 238, 10);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.achieversit.com/"><img src="achievers It logo.png" alt="achieversIt"></a>
+        <nav>
+        <a href="./TextFormatting.html">Text-formatting</a>
+        <a href="./lists.html">Lists in html</a>
+        <a href="./multimediaConcept.html">Multimedia in html</a>
+        <a href="./forms061124.html">Forms in html</a>
+        <a href="./links.html">Links in html</a>
+        </nav>
+    </header>
+    <h1>Tables in html</h1>
+    <br>
+    <h3>STUDENTS INFORMATION</h3>
+    <table id="student">
+         <tr>
+            <th>Sno</th>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Class</th>
+            <th>Grade</th>
+            <th>Percentage</th>
+            <th>Internal marks</th>
+            <th>No.of records submitted</th>
+            <th>Pending records</th>
+            <th>Address</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Isha</td>
+            <td>01</td>
+            <td rowspan="2">10th</td>
+            <td>A+</td>
+            <td>92%</td>
+            <td>25</td>
+            <td>7</td>
+            <td>0</td>
+            <td>Chittoor</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Basha</td>
+            <td>02</td>
+       <!-- <td></td> -->
+            <td>B+</td>
+            <td>78%</td>
+            <td>23</td>
+            <td>6</td>
+            <td>1</td>
+            <td>Tirupati</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>AshikG</td>
+            <td>03</td>
+            <td>8th</td>
+            <td>A+</td>
+            <td>98%</td>
+            <td>24</td>
+            <td>5</td>
+            <td>2</td>
+            <td>Hyderabad</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Sadhik</td>
+            <td>04</td>
+            <td>9th</td>
+            <td>A</td>
+            <td>90%</td>
+            <td>23</td>
+            <td>6</td>
+            <td>1</td>
+            <td>Renigunta</td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Shiny</td>
+            <td colspan="2">05</td>
+            <!-- <td></td> -->
+            <td>A+</td>
+            <td>91%</td>
+            <td>25</td>
+            <td>5</td>
+            <td>2</td>
+            <td>Chittoor</td>
+         </tr>
+    </table>
+    <br><br>
+
+        <h3>EMPLOYEES INFORMATION</h3>
+    <table id="employees">
+         <tr>
+            <th>Sno</th>
+            <th>Name</th>
+            <th>IDcard</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>workingdays</th>
+            <th>Leaves</th>
+            <th>entry time</th>
+            <th>email</th>
+            <th>Address</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Nageshbabu</td>
+            <td>0705</td>
+            <td>Fullstack</td>
+            <td>30,000</td>
+            <td>29</td>
+            <td>1</td>
+            <td>09.00AM</td>
+            <td>nageshbabu@gmail.com</td>
+            <td rowspan="2">Chittoor</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Murali</td>
+            <td>0706</td>
+            <td>Frontend</td>
+            <td>50,000</td>
+            <td>30</td>
+            <td>0</td>
+            <td>08.00AM</td>
+            <td>murali@gmail.com</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Dharmarao</td>
+            <td>0707</td>
+            <td>Telugu</td>
+            <td>60,000</td>
+            <td>27</td>
+            <td>3</td>
+            <td>10.00AM</td>
+            <td>Dharmarao@gmail.com</td>
+            <td>Tirupati</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Suresh</td>
+            <td>0708</td>
+            <td>NCC</td>
+            <td rowspan="2">75,000</td>
+            <td>30</td>
+            <td>0</td>
+            <td>07.00AM</td>
+            <td>suresh@gmail.com</td>
+            <td>Nagari</td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Rajesh</td>
+            <td>0709</td>
+            <!-- <td></td> -->
+            <td>Hindi</td>
+            <td>30</td>
+            <td colspan="2">-</td>
+            <td>rajeshh@gmail.com</td>
+            <td>Renigunta</td>
+         </tr>
+    </table>
+</body>
+</html>
